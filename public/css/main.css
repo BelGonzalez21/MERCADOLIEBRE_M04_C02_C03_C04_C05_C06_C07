@@ -1,0 +1,15 @@
+main h2{
+    font-size: var(--titulares);
+}
+article img{
+    width: 150px;
+}
+article .precio{
+    font-size: var(--precio);
+}
+article .descuento{
+    font-size: var(--descuento);
+}
+article .descripciones{
+    font-size: var(--);
+}

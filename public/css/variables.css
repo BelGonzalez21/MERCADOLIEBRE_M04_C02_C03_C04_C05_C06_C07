@@ -1,0 +1,14 @@
+:root{
+    --amarillo : #EAC926;
+    /* --negro : #000000; */
+    --celeste : #1259c3;
+    --grisOscuro : #666;
+    --grisClaro : #ebebeb;
+    --verde : #39b54a;
+    --texto : 12px;
+    --titulares : 24px;
+    --subtitulos : 18px;
+    --precios : 18px;
+    --descuentos : 16px;
+    --descripciones : 16px;
+}

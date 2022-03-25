@@ -1,0 +1,44 @@
+body .header{
+    background-color: var(--amarillo);
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  margin: 15px 0 10px 20px;
+}
+#search-bar {
+  /* margin-top:10px; */
+  margin-left: 20px;
+  width: 30px;
+}
+header .buy-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+header div p.buy{
+  font-size: var(--texto);
+  text-align: center;
+  color: var(--negro);
+}
+.nav-list{
+  margin: 20px 0 20px;
+}
+.nav-list li {
+  list-style: none;
+  font-size: var(--texto)
+}
+.nav-list li a {
+  text-decoration: none;
+}
+.burger-menu{
+  text-align: center;
+  padding: 20px;
+}
+.burger-menu i{
+  background-color: var(--celeste);
+  border-radius: 5px;
+  color: var(--grisClaro);
+  padding: 10px;
+}

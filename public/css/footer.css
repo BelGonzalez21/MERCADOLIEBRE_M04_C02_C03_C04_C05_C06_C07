@@ -1,0 +1,24 @@
+section.footer {
+  text-align: center;
+  margin: 20%;
+}
+section h3 {
+    font-size: var(--descripciones);
+    font-weight: 700;
+    color: var(--grisOscuro)
+}
+section.footer .texto{
+    font-size: var(--texto);
+}
+section.footer i{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--celeste)
+}
+section.copyright{
+    font-size: var(--texto);
+    text-align: center;
+    color: var(--grisOscuro);
+    margin: 18px;
+}
