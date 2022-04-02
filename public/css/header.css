@@ -7,10 +7,17 @@ header img {
   height: auto;
   margin: 15px 0 10px 20px;
 }
-#search-bar {
-  /* margin-top:10px; */
-  margin-left: 20px;
+header div#search-bar {
+  margin: 10px;
   width: 30px;
+  display: flex;
+}
+
+header div input {
+  margin-right: 5px;
+}
+header div button i{
+  padding: 2px;
 }
 header .buy-container{
   display: flex;
@@ -22,6 +29,10 @@ header div p.buy{
   text-align: center;
   color: var(--negro);
 }
+nav{
+  display: none;
+  padding: 10px;
+}
 .nav-list{
   margin: 20px 0 20px;
 }
@@ -31,6 +42,7 @@ header div p.buy{
 }
 .nav-list li a {
   text-decoration: none;
+  color: var(--negro);
 }
 .burger-menu{
   text-align: center;

@@ -1,10 +1,11 @@
 :root{
     --amarillo : #EAC926;
-    /* --negro : #000000; */
+    --negro : #000000;
     --celeste : #1259c3;
     --grisOscuro : #666;
     --grisClaro : #ebebeb;
     --verde : #39b54a;
+    --blanco : #ffffff;
     --texto : 12px;
     --titulares : 24px;
     --subtitulos : 18px;
