@@ -1,5 +1,6 @@
 main{
     background-color: var(--grisClaro);
+    padding-bottom: 20px;
 }
 main img.banner{
     width: 100%;
