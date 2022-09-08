@@ -1,20 +1,44 @@
 body .header{
     background-color: var(--amarillo);
 }
-
+.logo-search-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo-container{
+  width: 40%;
+  margin: 25px 10px 10px 20px;
+}
 header img {
-  width: 150px;
-  height: auto;
-  margin: 15px 0 10px 20px;
+  /* width: 50%;*/
+   height: 30px; 
+  /*margin: 25px 10px 10px 20px; */
+  align-self: flex-start;
 }
 header div#search-bar {
   margin: 10px;
-  width: 30px;
+  width: 40%;
+  height: 30px;
+  margin: 25px 20px 10px 10px;
   display: flex;
+  
 }
-
+.fa-search{
+  color: var(--grisOscuro);
+}
 header div input {
-  margin-right: 5px;
+  /* margin-right: 5px; */
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 2px;
+  width: 80%;
+}
+header div button {
+  border: none;
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+  width: 20%;
 }
 header div button i{
   padding: 2px;
@@ -23,6 +47,7 @@ header .buy-container{
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  width: 100%;
 }
 header div p.buy{
   font-size: var(--texto);
@@ -53,4 +78,34 @@ nav{
   border-radius: 5px;
   color: var(--grisClaro);
   padding: 10px;
+}
+
+@media (min-width: 620px){
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo-container{
+    width: 20%;
+    padding-right: 5px;
+  }
+  header div#search-bar{
+    padding-right: 5px;
+    padding-left: 0;
+    width: 30%;
+  }
+  header .buy-container{
+    padding: 25px 20px 10px 10px;
+    width: 40%;
+  }
+  .nav-list{
+    display: flex;
+    font-size: 12px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .nav-list li{
+    padding: 5px;
+  }
 }

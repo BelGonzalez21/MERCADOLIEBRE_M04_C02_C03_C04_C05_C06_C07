@@ -2,6 +2,7 @@ main{
     background-color: var(--grisClaro);
     padding-bottom: 20px;
 }
+
 main img.banner{
     width: 100%;
     margin: 0;
@@ -13,7 +14,7 @@ main section{
 main h2{
     padding: 10px auto;
     font-size: var(--titulares);
-    color: var(--grisOscuro);
+    color: rgb(32, 32, 32);
     text-align: center;
     margin: 20px auto 20px;
 }
@@ -27,30 +28,94 @@ article img{
 }
 article div.product-detail{
     padding: 15px;
+}
+
+div.circulo-truck{
+    padding: 15px;
+    position: relative;
     border-top: var(--grisClaro) solid 1px ;
 }
-div.circulo-truck {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: var(--verde) solid 2px;
-  }
-div.circulo-truck i{
-    width: 100%;
-    color: var(--verde);
-    position: relative;
+.circulo-truck i{
+    display: block;
+    font-size: 16px;
     padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color:  var(--verde);
+   }
+   
+.product-price-box{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
 }
 .precio{
-    font-size: var(--precio);
+    font-size: var(--precios);
+    width: 30%;
 }    
 .descuento{
-    font-size: var(--descuento);
+    font-size: var(--descuentos);
     color: var(--verde);
+    width: 70%;
 }
 .descripciones{
     display: none;
-    font-size: var(--descuento); 
+    padding-top: 20px;
+    font-size: var(--descuentos); 
+    color: rgb(32, 32, 32);
+}
+
+@media (min-width: 461px){
+    /* header */
+    nav{
+        display: block;
+    }
+    section h2{
+        text-align: left;
+        margin: 10px;
+    }
+    .burger-menu{
+        display:none;
+    }
+    /* main */
+    .descripciones{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    article.card-container{
+        width: 45%;
+    }
+    .precio{
+        font-size: 14px;
+        width: 50%;
+    }
+    .descuento{
+        font-size: 12px;
+        width: 50%;
+    }
+    .descripciones{
+        width: 100%;
+    }
+}
+
+@media (min-width: 920px){
+    article.card-container{
+        width: 22%;
+    }
 }
 

@@ -4,20 +4,3 @@
 @import url('main.css');
 @import url('footer.css');
 
-@media (min-width: 361px){
-    /* header */
-    nav{
-        display: block;
-    }
-    .burger-menu{
-        display:none;
-    }
-    /* main */
-    .descripciones{
-        display: block;
-    }
-
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-}
