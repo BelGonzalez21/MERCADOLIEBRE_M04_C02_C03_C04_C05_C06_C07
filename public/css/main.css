@@ -22,6 +22,8 @@ article.card-container{
     margin: 10px;
     padding: 0 15px;
     background-color: var(--blanco);
+    cursor: pointer;
+    border-radius: 3px;
 }
 article img{
     width: 100%;
@@ -49,7 +51,6 @@ div.circulo-truck{
     top: -15px;
     color:  var(--verde);
    }
-   
 .product-price-box{
     display: flex;
     width: 100%;
@@ -65,10 +66,21 @@ div.circulo-truck{
     width: 70%;
 }
 .descripciones{
-    display: none;
+    display: block;
     padding-top: 20px;
-    font-size: var(--descuentos); 
+    font-size: 2px; 
     color: rgb(32, 32, 32);
+    opacity: 0;
+}
+article.card-container:hover .product-detail .descripciones{
+    font-size: var(--descuentos);
+    opacity: 1;
+    
+}
+article.card-container:hover .product-detail .circulo-truck i{
+    transform: rotate(-90deg);
+    transition: 2s;
+    transition-timing-function: ease-out;
 }
 
 @media (min-width: 461px){
@@ -88,7 +100,7 @@ div.circulo-truck{
         display: block;
     }
 
-    main section article{
+    main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .cards{

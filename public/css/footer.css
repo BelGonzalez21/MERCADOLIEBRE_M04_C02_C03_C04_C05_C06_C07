@@ -1,3 +1,6 @@
+footer{
+    margin-bottom: 0;
+}
 section.footer {
   text-align: center;
   margin: 20px;
@@ -21,4 +24,17 @@ section.copyright{
     text-align: center;
     color: var(--grisOscuro);
     margin: 10px;
+}
+@media (min-width: 920px) {
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section.footer{
+        width: 26%;
+    }
+    section.footer i{
+        font-size: 1.2em;
+    }
 }
