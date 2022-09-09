@@ -1,0 +1,133 @@
+.register{
+    display: flex;
+    justify-content: center;
+    padding: auto;
+}
+.form-register{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 50px 20px 50px;
+    flex-wrap: wrap;
+}
+label{
+    width: 100%;
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+}
+.input-container {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    border-style: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+input[type="date"]{
+    cursor: pointer;
+}
+.profile, .interests{
+    width: 100%;
+}
+.interests{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.options{
+    display:flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+
+}
+.option-items{
+    display: flex;
+    padding-left: 8px;
+    width: 30%;
+}
+.option-items input{
+    width: 20%;
+}
+.register-title{
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 8px;
+}
+.photo{
+    width: 100%;
+}
+.photo input[type="file"]{
+    background-color: var(--grisOscuro);
+    border-style: none;
+    color:var(--blanco);
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.buttons button{
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+.buttons button[type="reset"]{
+    border: 2px solid var(--celeste);
+
+}
+.buttons button[type="submit"]{
+    background-color: var(--celeste);
+    color: var(--blanco);
+}
+@media (min-width: 620px){
+    .form-register{
+        width: 80%;
+    }
+    .input-container {
+        width: 50%;
+        /* padding: 8px;
+        margin: 5px 0; */
+    }
+    .options{
+        flex-direction: row;
+    }
+    .interests{
+        flex-direction: row;
+    }
+    .buttons{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .buttons button{
+        width: 45%;
+        height: 35px;
+        margin: 20px 0;
+        border-radius: 5px;
+        border-style: none;
+        cursor: pointer;
+    }
+    .buttons button[type="reset"]{
+        border: 2px solid var(--celeste);
+    
+    }
+    .buttons button[type="submit"]{
+        background-color: var(--celeste);
+        color: var(--blanco);
+    }
+}

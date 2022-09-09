@@ -10,7 +10,7 @@ body .header{
   width: 40%;
   margin: 25px 10px 10px 20px;
 }
-header img {
+header a img {
   /* width: 50%;*/
    height: 30px; 
   /*margin: 25px 10px 10px 20px; */
@@ -18,14 +18,21 @@ header img {
 }
 header div#search-bar {
   margin: 10px;
-  width: 40%;
-  height: 30px;
+  width: 30%;
+  height: 40px;
   margin: 25px 20px 10px 10px;
   display: flex;
+  align-items: center;
   
+}
+#search-bar input{
+height: 30px;
 }
 .fa-search{
   color: var(--grisOscuro);
+  height: 30px;
+  text-align: center;
+  padding-top:7px;
 }
 header div input {
   /* margin-right: 5px; */
